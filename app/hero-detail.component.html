@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label> {{hero.id}}
+  </div>
+  <div>
+    <label>name: </label>
+    <!-- 单向数据绑定, 只负责显示 -->
+    <!--<input value="{{hero.name}}" placeholder="name">-->
+
+    <!-- 双向数据绑定, 显示及change事件,  需要引入 FormsModule  -->
+    <input [(ngModel)]="hero.name" placeholder="name">
+  </div>
+  <button (click)="goBack()"> Back </button> &nbsp;
+  <button (click)="save()"> Save </button>
+</div>
