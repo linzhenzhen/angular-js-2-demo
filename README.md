@@ -31,4 +31,9 @@ npm start         // 启动 TypeScript 编译器，它会监视文件变更，�
 git init
 git add .
 git commit -m "Initial commit"
+git push origin master
 ```
+
+## 后续会有测试
+
+coming soon ...
